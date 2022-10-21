@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
-               sh 'cp */step2/* /var/www/html/'
+               sh 'cp ./* /var/www/html/'
             }
         }
     }
