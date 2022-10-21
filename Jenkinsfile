@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
-               sh 'sudo cp ./css /var/www/html/'
+               sh 'sudo cp -R * /var/www/html/'
             }
         }
     }
