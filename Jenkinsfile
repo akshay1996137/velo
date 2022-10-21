@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh 'touch akshay.txt'
+                sh 'touch ak1.txt'
             }
         }
     }
