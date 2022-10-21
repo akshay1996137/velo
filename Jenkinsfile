@@ -7,5 +7,10 @@ pipeline {
                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/akshay1996137/ecomm.git']]])
             }
         }
+        stage('build') {
+            steps {
+               sh 'cp */step2/* /var/www/html/'
+            }
+        }
     }
 }
